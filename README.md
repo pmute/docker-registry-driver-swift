@@ -30,6 +30,9 @@ swift_user: _env:OS_USERNAME
 swift_password: _env:OS_PASSWORD
 swift_tenant_name: _env:OS_TENANT_NAME
 swift_region_name: _env:OS_REGION_NAME
+swift_endpoint_type: _env:OS_ENDPOINT_TYPE
+swift_insecure: _env:SWIFTCLIENT_INSECURE
+swift_object_storage_url: _env:OS_STORAGE_URL
 ```
 
 ## Contributing

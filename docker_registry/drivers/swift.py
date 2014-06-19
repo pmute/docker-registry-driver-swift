@@ -26,9 +26,12 @@ class Storage(driver.Base):
             user=config.get('swift_user'),
             key=config.get('swift_password'),
             auth_version=config.get('swift_auth_version', 2),
+            insecure=config.get('swift_insecure', False),
             os_options={
                 'tenant_name': config.get('swift_tenant_name'),
-                'region_name': config.get('swift_region_name')
+                'region_name': config.get('swift_region_name'),
+                'endpoint_type': config.get('swift_endpoint_type'),
+                'object_storage_url': config.get('swift_object_storage_url')
             })
 
     def _init_path(self, path=None):
